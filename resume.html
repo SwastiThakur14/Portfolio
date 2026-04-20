@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Swasti Thakur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            line-height: 1.5;
+            background-color: #f1f5f9;
+            padding: 40px 20px;
+        }
+
+        .resume-page {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-info h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .header-info p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .contact-grid {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .contact-grid a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .item-sub {
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 15px;
+            font-size: 0.95rem;
+            margin-bottom: 3px;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill-group strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .btn-print {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+            transition: 0.3s;
+        }
+
+        .btn-print:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+        }
+
+        @media print {
+            .btn-print {
+                display: none;
+            }
+
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .resume-page {
+                box-shadow: none;
+                border: none;
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-page">
+        <header>
+            <div class="header-info">
+                <h1>Swasti Thakur</h1>
+                <p>AI & Machine Learning Engineer (Student)</p>
+            </div>
+            <div class="contact-grid">
+                <p>Email: swasti@example.com</p>
+                <p>Phone: +91 0000000000</p>
+                <p><a href="https://github.com/SwastiThakur14">github.com/SwastiThakur14</a></p>
+                <p><a href="https://www.linkedin.com/in/swasti-thakur/">linkedin.com/in/swasti-thakur/</a></p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Bachelor of Technology in Computer Science (AI & ML)</span>
+                    <span>2025 — 2029</span>
+                </div>
+                <div class="item-sub">Manav Rachna University</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <strong>Programming Languages</strong>
+                    <p>Python (Highly Proficient), C Language, JavaScript</p>
+                </div>
+                <div class="skill-group">
+                    <strong>AI & Machine Learning</strong>
+                    <p>Generative AI, Large Language Models (LLMs), Computer Vision</p>
+                </div>
+                <div class="skill-group">
+                    <strong>Web Technologies</strong>
+                    <p>HTML5, CSS3, Flask (Python Backend), Vite</p>
+                </div>
+                <div class="skill-group">
+                    <strong>Tools & Platforms</strong>
+                    <p>GitHub, VS Code, Antigravity, Claude API, Gemini API</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>AI Study Mate</span>
+                    <span>Ongoing</span>
+                </div>
+                <div class="item-sub">Personal Project | HTML, CSS, JS, Flask, Gemini API</div>
+                <ul>
+                    <li>Developing an AI-powered study planner that generates personalized daily schedules and tracks
+                        student productivity.</li>
+                    <li>Integrating Gemini API for intelligent content synthesis and study tips.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>Library Management System</span>
+                    <span>Completed</span>
+                </div>
+                <div class="item-sub">Academic Project | Python, SQL, Antigravity</div>
+                <ul>
+                    <li>Designed an end-to-end system for managing book inventories, student registrations, and checkout
+                        flows.</li>
+                    <li>Implemented a sleek terminal-based interface with automated data persistence.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Achievements</h2>
+            <ul>
+                <li><strong>Strong Foundation:</strong> Mastering Data Structures and Algorithms with a focus on
+                    competitive programming.</li>
+                <li><strong>Active Problem Solver:</strong> Solving complex algorithmic challenges regularly on
+                    LeetCode.</li>
+                <li><strong>Tech Enthusiast:</strong> Rapidly learning and implementing modern AI tools like Claude API
+                    and Gemini API.</li>
+                <li><strong>Community Contribution:</strong> Building open-source projects to help fellow students
+                    improve productivity.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Python for Data Science (Placeholder)</li>
+                <li>Intro to Neural Networks (Placeholder)</li>
+            </ul>
+        </section>
+    </div>
+
+    <button class="btn-print" onclick="window.print()">Print as PDF</button>
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swasti Thakur | AI & ML Engineer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Swasti Thakur, an Artificial Intelligence & Machine Learning Engineer specializing in intelligent systems and modern digital experiences.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-mode">
+    <!-- Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky">
+        <div class="nav-container">
+            <div class="logo">Swasti Thakur</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
+                    </button>
+                </li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge" data-reveal>Available for New Opportunities</span>
+                    <h1 class="hero-title" data-reveal>
+                        Hi, I'm <span class="gradient-text">Swasti Thakur</span>
+                    </h1>
+                    <h2 class="hero-subtitle" data-reveal>
+                        <span id="typing-text"></span>
+                    </h2>
+                    <p class="hero-description" data-reveal>
+                        I build intelligent systems, AI-powered applications, and modern digital experiences using
+                        Machine Learning, Python, and Web Technologies.
+                    </p>
+                    <div class="hero-btns" data-reveal>
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <!-- <a href="#" class="btn btn-secondary">Download Resume</a>--->
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-reveal>
+                <div class="floating-shapes">
+                    <img src="ai_hero_illustration.png" alt="AI & ML Illustration" class="hero-img">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text" data-reveal>
+                        <p>
+                            I am a passionate AI & Machine Learning engineer focused on building real-world AI
+                            solutions. I enjoy solving problems through intelligent systems, clean code, and modern
+                            interfaces.
+                        </p>
+                        <p>
+                            My interests include Generative AI, Computer Vision, Machine learning and Natural Language
+                            Processing. I
+                            bridge the gap between complex algorithms and user-centric design to create seamless AI
+                            experiences.
+                        </p>
+                        <div class="achievements">
+                            <div class="achievement-item">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                <span>Strong DSA</span>
+                            </div>
+                            <div class="achievement-item">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                <span>Built AI + Web Projects</span>
+                            </div>
+                            <div class="achievement-item">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                <span>Problem Solver</span>
+                            </div>
+                            <div class="achievement-item">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                <span>Fast Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">Skills</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="skill-category" data-reveal>
+                        <h3>Programming Languages</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card glass">
+                                <ion-icon name="logo-python"></ion-icon>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-card glass">
+                                <ion-icon name="code-slash-outline"></ion-icon>
+                                <span>C</span>
+                            </div>
+                            <div class="skill-card glass leetcode">
+                                <ion-icon name="stats-chart-outline"></ion-icon>
+                                <a href="https://leetcode.com/u/Swasti_Thakur/" target="_blank">LeetCode Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web -->
+                    <div class="skill-category" data-reveal>
+                        <h3>Web</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card glass">
+                                <ion-icon name="logo-html5"></ion-icon>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-card glass">
+                                <ion-icon name="logo-css3"></ion-icon>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-card glass">
+                                <ion-icon name="logo-javascript"></ion-icon>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Tools -->
+                    <div class="skill-category" data-reveal>
+                        <h3>AI & Tools</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card glass">
+                                <ion-icon name="logo-github"></ion-icon>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-card glass">
+                                <ion-icon name="cube-outline"></ion-icon>
+                                <span>Antigravity</span>
+                            </div>
+                            <div class="skill-card glass">
+                                <ion-icon name="terminal-outline"></ion-icon>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-card glass">
+                                <ion-icon name="sparkles-outline"></ion-icon>
+                                <span>Claude / ChatGPT</span>
+                            </div>
+                            <div class="skill-card glass">
+                                <ion-icon name="infinite-outline"></ion-icon>
+                                <span>Gemini</span>
+                            </div>
+                            <div class="skill-card glass">
+                                <ion-icon name="flash-outline"></ion-icon>
+                                <span>Stitch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass" data-reveal>
+                        <div class="project-img-container">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <!---Change the link here for Library management system-->
+                                    <a href="https://github.com/SwastiThakur14/copilot-demo" class="link-icon"><ion-icon
+                                            name="logo-github"></ion-icon></a>
+                                </div>
+                            </div>
+                            <img src="library_project.png" alt="Library Management System" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Library Management System</h3>
+                            <p>Smart system for managing books, student records, and issue/return processes.</p>
+                            <div class="tech-stack">
+                                <span class="tag">Html</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Antigravity</span>
+                            </div>
+                            <div class="project-footer">
+                                <!--change the url from the web page-->
+                                <a href="https://github.com/SwastiThakur14/copilot-demo" class="btn-text">Live Demo
+                                    <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                                <!---Change the link here for library management system from github-->
+                                <a href="https://github.com/SwastiThakur14/copilot-demo" class="btn-text">GitHub
+                                    <ion-icon name="logo-github"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass" data-reveal>
+                        <div class="project-img-container">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <!--Change the url of the AI Study mate of github-->
+                                    <a href="https://github.com/SwastiThakur14/copilot-demo" class="link-icon"><ion-icon
+                                            name="logo-github"></ion-icon></a>
+                                </div>
+                            </div>
+                            <img src="study_planner.png" alt="AI Study Mate" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Study Mate</h3>
+                            <p>AI-powered study planner that creates personalized study plans and productivity tracking.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tag">Html</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">JS</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">Gemini API</span>
+                            </div>
+                            <div class="project-footer">
+                                <!---web page url-->
+                                <a href="https://github.com/SwastiThakur14/copilot-demo" class="btn-text">Live Demo
+                                    <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                                <!--change with github url of the project-->
+                                <a href="https://github.com/SwastiThakur14/copilot-demo" class="btn-text">GitHub
+                                    <ion-icon name="logo-github"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="contact-header-text" data-reveal>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                </div>
+
+                <div class="contact-cards-grid" data-reveal>
+                    <a href="mailto:swasti.mru@gmail.com" class="contact-card glass">
+                        <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>swasti.mru@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/swasti-thakur/" target="_blank" class="contact-card glass">
+                        <div class="icon-box"><ion-icon name="logo-linkedin"></ion-icon></div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>swasti-thakur</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/SwastiThakur14" target="_blank" class="contact-card glass">
+                        <div class="icon-box"><ion-icon name="logo-github"></ion-icon></div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>SwastiThakur14</p>
+                        </div>
+                    </a>
+                    <a href="tel:+918447217444" class="contact-card glass">
+                        <div class="icon-box"><ion-icon name="call-outline"></ion-icon></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91-8447217444</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026. Built with passion & AI.</p>
+            <div class="social-links">
+                <a href="https://github.com/SwastiThakur14"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/swasti-thakur/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
